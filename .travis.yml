@@ -1,0 +1,7 @@
+arch: arm64
+language: go
+go:
+  - 1.16.5
+services:
+  - docker
+script: git clone https://github.com/l1b0k/terway.git && cd terway && docker build -t demo:1 .
